@@ -1,0 +1,1 @@
+SELECT * FROM BILLING WHERE billedamount = 19929;

@@ -1,0 +1,1 @@
+CREATE INDEX billingamount ON BILLING(billedamount);
