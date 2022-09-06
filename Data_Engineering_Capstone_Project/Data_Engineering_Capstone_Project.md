@@ -185,3 +185,11 @@ Creating a bar chart of Quarterly sales of mobile phones.
 You are a data engineer at an e-commerce company. You need to keep data synchronized between different databases/data warehouses as a part of your daily routine. One task that is routinely performed is the sync up of staging data warehouse and production data warehouse. Automating this sync up will save you a lot of time and standardize your process. You will be given a set of python scripts to start with. You will use/modify them to perform the incremental data load from MySQL server which acts as a staging warehouse to the IBM DB2 which is a production data warehouse. This script will be scheduled by the data engineers to sync up the data between the staging and production data warehouse.
 
 ### Automate loading of incremental data into the data warehouse
+Creating the function get_last_rowid() that connect to the DB2 data warehouse and return the last rowid of the table sales_data.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/22a1fe90af5f710aaf9f2dfab457b96351a9d362/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_1/get_last_rowid.PNG)
+
+Creating the function get_latest_records() that connect to MySQL database and return all records later than the given last_rowid from DB2 data warehouse.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/22a1fe90af5f710aaf9f2dfab457b96351a9d362/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_1/get_latest_records.PNG)
+
+Creating the function insert_records() that connect to the DB2 data warehouse and insert all the given 
+records (latest records from MySQL database).
