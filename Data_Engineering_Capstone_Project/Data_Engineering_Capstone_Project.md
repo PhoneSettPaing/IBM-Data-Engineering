@@ -112,7 +112,7 @@ You will use your data warehousing skills to design and implement a data warehou
 
 ### Designing a Data Warehouse
 The ecommerce company has provided you the sample data.<br />
-![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/ecom-sample-data.png)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/ecom-sample-data.png)<br />
 You will start your project by designing a Star Schema for the warehouse by identifying the columns for the various dimension and fact tables in the schema. Name your database as softcart.
 
 Creating tables and relationships amongst created tables, using the ERD design Tool of pgAdmin.
@@ -146,7 +146,7 @@ Rollup query using the columns year, country, and totalsales. (Total sales per y
 Cube query using the columns year, country, and average sales. (Average sales per year per country, Average sales per year, Average sales per country)
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/cube.PNG)
 
-Creating a materialized query table (MQT) named total_sales_per_country that has the columns country and total_sales to improve the performance of complex queries that operate on very large amounts of data.
+Creating a materialized query table (MQT) named total_sales_per_country that has the columns country and total_sales to improve the performance of complex queries that operate on very large amounts of data.<br />
 Db2 uses a materialized query table to precompute the results of data that is derived from one or more tables. When you submit a query, Db2 can use the results that are stored in a materialized query table rather than compute the results from the underlying source tables on which the materialized query table is defined.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/mqt.PNG)
 
