@@ -111,4 +111,43 @@ You are a data engineer hired by an ecommerce company named SoftCart.com. The co
 You will use your data warehousing skills to design and implement a data warehouse for the company.
 
 ### Designing a Data Warehouse
-The ecommerce company has provided you the sample data.
+The ecommerce company has provided you the sample data.<br />
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/ecom-sample-data.png)
+You will start your project by designing a Star Schema for the warehouse by identifying the columns for the various dimension and fact tables in the schema. Name your database as softcart.
+
+Creating tables and relationships amongst created tables, using the ERD design Tool of pgAdmin.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_1/softcartRelationships.PNG)
+
+### Create the schema
+After creating tables and relationships using ERD design tool, generate the schema sql using the tool. Then use the created schema sql to create the schema in a database named staging.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_1/createschema.PNG)
+
+## [Module 3.2: Data Warehouse Reporting](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_%26_Reporting)
+
+### Scenario
+You are a data engineer hired by an ecommerce company named SoftCart.com. The company retails download only items like E-Books, Movies, Songs etc. The company has international presence and customers from all over the world. You have designed the schema for the data warehouse in the previous assignment. Data engineering is a team game. Your senior data engineer reviewed your design. Your schema design was improvised to suit the production needs of the company. In this assignment you will generate reports out of the data in the data warehouse.
+
+### Load data into the Data Warehouse (IBM DB2)
+Loading the data provided by the company in csv format into the tables (DimDate, DimCategory, DimCountry, FactSales).
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/DimDate.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/DimCategory.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/DimCountry.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/FactSales.PNG)
+
+### Queries for data analytics
+Creating and running queries to check if the created data warehouse can create reports.
+
+Grouping sets query using the columns country, category, totalsales. (Total sales per country and Total sales per category)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/groupingsets.PNG)
+
+Rollup query using the columns year, country, and totalsales. (Total sales per year per country and Total sales per year)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/rollup.PNG)
+
+Cube query using the columns year, country, and average sales. (Average sales per year per country, Average sales per year, Average sales per country)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/cube.PNG)
+
+Creating a materialized query table (MQT) named total_sales_per_country that has the columns country and total_sales to improve the performance of complex queries that operate on very large amounts of data.
+Db2 uses a materialized query table to precompute the results of data that is derived from one or more tables. When you submit a query, Db2 can use the results that are stored in a materialized query table rather than compute the results from the underlying source tables on which the materialized query table is defined.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/mqt.PNG)
+
+## [Module 4: Data Analytics & Dashboard Creation](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/4_Data_Analytics_%26_Dashboard_Creation)
