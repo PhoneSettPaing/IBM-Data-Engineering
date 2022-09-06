@@ -151,3 +151,33 @@ Db2 uses a materialized query table to precompute the results of data that is de
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e7708b4f3b027771459ed00a859467a210da001c/Data_Engineering_Capstone_Project/3_Build_a_Data_Warehouse_&_Reporting/Image_for_peer_graded_assignment/Part_2/mqt.PNG)
 
 ## [Module 4: Data Analytics & Dashboard Creation](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/4_Data_Analytics_%26_Dashboard_Creation)
+
+### Scenario
+You are a data engineer at an e-commerce company. Your company has finished setting up a data warehouse. Now you are assigned the responsibility to design a reporting dashboard that reflects the key metrics of the business.
+
+### Load data into the data warehouse (IBM DB2)
+Importing the data in the given file “ecommerce.csv” into a table named sales_history.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/dataimport.PNG)
+
+Listing the first 10 rows in the sales_history table to check the loaded data.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/top10rows.PNG)
+
+### Create data source in IBM Cognos
+Creating connection between sales_history table in IBM DB2 and Watson Studio with added Cognos Dashboard Embedded (CDE) service to use it as a data source.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/extra_images/datasource_connecting_Db2.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/extra_images/datasource_connecting_IBMDb2.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/extra_images/datasource_fromDb2_addtable.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/datasource.PNG)
+
+### Create dashboard using IBM Cognos
+Creating a line chart of month wise total sales for the year 2020.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/linechart.PNG)
+
+Creating a pie chart of category wise total sales.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/piechart.PNG)
+
+Creating a bar chart of Quarterly sales of mobile phones.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/da0f3bdb4df5943c21186a08fc0ae7586abfffad/Data_Engineering_Capstone_Project/4_Data_Analytics_&_Dashboard_Creation/Image_for_peer_graded_assignment/barchart.PNG)
+
+## [Module 5.1: ETL](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/5_ETL_%26_Data_Pipelines_using_Apache_Airflow)
+
