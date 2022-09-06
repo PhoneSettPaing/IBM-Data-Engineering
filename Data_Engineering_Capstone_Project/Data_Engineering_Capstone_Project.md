@@ -81,3 +81,19 @@ Installing mongoimport and mongoexport. Importing given data(catalog.json) into 
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0e3e9c816b04837746774a0e262579d36d69c790/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongoimport.PNG)
 
 List out all databases and collections on mongodb server to check if catalog database and electronics collection are created successfully or not.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/list-dbs.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/list-collections.PNG)
+
+Creating index on the field ‘type’ for faster queries.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/create-index.PNG)
+
+### Trying out a few queries to check the imported data:
+Finding the count of laptops.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongo-query-laptops.PNG)
+
+Finding the number of smart phones with screen size of 6 inches.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongo-query-mobiles1.PNG)
+
+Finding the average screen size of smart phones.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongo-query-mobiles2.PNG)
+
