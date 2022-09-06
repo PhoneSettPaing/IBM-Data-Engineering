@@ -58,13 +58,16 @@ Creating sales database and sales_data table in sales database.
 ### Load the given data(oltpdata.csv) into sales_data table
 Importing data from oltpdata.csv file into sales_data table using phpMyAdmin GUI.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/importdata.PNG)
+
 List the tables in the sales database and query the count of records in the sales_data table to make sure the data are imported correctly and successfully.
+
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/listtables.PNG)
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/salesrows.PNG)
 
 ### Set up Admin tasks
 Creating index on the timestamp field to speed up queries.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/listindexes.PNG)
+
 Writing a bash script(datadump.sh) that exports all the rows in the sales_data table to a file named sales_data.sql to automate the export of the daily incremental data into the data warehouse.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/exportdata.PNG)
 
