@@ -88,6 +88,7 @@ Creating index on the field ‘type’ for faster queries.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/create-index.PNG)
 
 ### Trying out a few queries to check the imported data:
+
 Finding the count of laptops.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongo-query-laptops.PNG)
 
