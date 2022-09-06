@@ -191,5 +191,18 @@ Creating the function get_last_rowid() that connect to the DB2 data warehouse an
 Creating the function get_latest_records() that connect to MySQL database and return all records later than the given last_rowid from DB2 data warehouse.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/22a1fe90af5f710aaf9f2dfab457b96351a9d362/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_1/get_latest_records.PNG)
 
-Creating the function insert_records() that connect to the DB2 data warehouse and insert all the given 
-records (latest records from MySQL database).
+Creating the function insert_records() that connect to the DB2 data warehouse and insert all the given records (latest records from MySQL database).
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/22a1fe90af5f710aaf9f2dfab457b96351a9d362/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_1/insert_records.PNG)
+
+### Testing the data synchronization
+Cleaned Data in DB2 data warehouse before synchronization.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/579ffe1302f2709758e69794d8b53f8a5b295c51/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Extra_image/last_row_record_b4_automation.PNG)
+
+Running automation.py for data synchronization.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/579ffe1302f2709758e69794d8b53f8a5b295c51/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_1/synchronization.PNG)
+
+Data in DB2 data warehouse after synchronization.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/579ffe1302f2709758e69794d8b53f8a5b295c51/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Extra_image/last_row_record_after_automation.PNG)
+Data have been successfully synchronized.
+
+## [Module 5.2: Data Pipelines using Apache Airflow](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/5_ETL_%26_Data_Pipelines_using_Apache_Airflow)
