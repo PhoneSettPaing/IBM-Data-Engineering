@@ -37,3 +37,35 @@ SoftCart's online presence is primarily through its website, which customers acc
 
 ## [Module 1: Data Platform Architecture and OLTP Database](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database)
 
+### OLTP database requirements and design
+
+#### OLTP database:
+OLTP database is generally used to handle everyday business transactions of an organization like a bank or a super market chain. OLTP databases can be write heavy or may have a balanced read/write load.
+
+#### OLTP database requirements:
+An OLTP database is expected to handle a huge number of transactions per second. Each transaction usually involves accessing (read/write) a small portion of the database, in other words the payload per transaction is small. The time taken to execute a transaction usually called latency needs to be very less.
+
+#### OLTP database design:
+The schema of an OLTP database is highly normalized so as to achieve a very low latency. To further improve the latency an OLTP database stores only the recent data like the last few week's data. They are usually run on storage that is very fast like SSD.
+
+### Scenario
+You are a data engineer at an e-commerce company. Your company needs you to design a data platform that uses MySQL as an OLTP database. You will be using MySQL to store the OLTP data.
+
+### Design the OLTP Database
+Creating sales database and sales_data table in sales database.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/createtable.PNG)
+
+### Load the given data(oltpdata.csv) into sales_data table
+Importing data from oltpdata.csv file into sales_data table using phpMyAdmin GUI.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/importdata.PNG)
+List the tables in the sales database and query the count of records in the sales_data table to make sure the data are imported correctly and successfully.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/listtables.PNG)
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/salesrows.PNG)
+
+### Set up Admin tasks
+Creating index on the timestamp field to speed up queries.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/listindexes.PNG)
+Writing a bash script(datadump.sh) that exports all the rows in the sales_data table to a file named sales_data.sql to automate the export of the daily incremental data into the data warehouse.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/exportdata.PNG)
+
+## Module 2: 
