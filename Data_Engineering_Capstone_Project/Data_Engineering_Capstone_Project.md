@@ -59,8 +59,7 @@ Creating sales database and sales_data table in sales database.
 Importing data from oltpdata.csv file into sales_data table using phpMyAdmin GUI.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/importdata.PNG)
 
-List the tables in the sales database and query the count of records in the sales_data table to make sure the data are imported correctly and successfully.
-
+List the tables in the sales database and query the count of records in the sales_data table to make sure the data are imported correctly and successfully.<br />
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/listtables.PNG)
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/salesrows.PNG)
 
@@ -88,8 +87,7 @@ Creating index on the field ‘type’ for faster queries.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/create-index.PNG)
 
 ### Trying out a few queries to check the imported data:
-
-Finding the count of laptops.
+Finding the count of laptops.<br />
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongo-query-laptops.PNG)
 
 Finding the number of smart phones with screen size of 6 inches.
