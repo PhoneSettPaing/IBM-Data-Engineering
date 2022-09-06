@@ -181,7 +181,7 @@ Creating a bar chart of Quarterly sales of mobile phones.
 
 ## [Module 5.1: ETL](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/5_ETL_%26_Data_Pipelines_using_Apache_Airflow)
 
-### Assignment overview
+### Assignment Overview
 The Data Warehouse gets information from several sources including the transactional (OLTP) database. Transactional data from the OLTP database (in this case MySQL) needs to be propagated to the Warehouse on frequent basis. This data movement can be updated using ETL processes.
 
 In this first part of the assignment, you will setup an ETL process using Python to extract new transactional data for each day from the MySQL database, transform it and then load it into the data warehouse in DB2.
@@ -216,7 +216,7 @@ Data have been successfully synchronized.
 
 ## [Module 5.2: Data Pipelines using Apache Airflow](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/5_ETL_%26_Data_Pipelines_using_Apache_Airflow)
 
-### Assignment overview
+### Assignment Overview
 Our data platform includes a Big Data repository that is used for analytics using Machine Learning with Apache Spark. This Big Data repository gets data from several sources including the Data Warehouse and the Web Server log. As data from the web server log is logged, it needs to be added to the Big Data system on a frequent basis - making it an ideal process to automate using a data pipeline.
 
 In this second part of the assignment, you will create and run a DAG using Apache Airflow to extract daily data from the web server log, process it, and store it in a format to prepare it for loading into the Big Data platform.
@@ -230,3 +230,60 @@ Write a pipeline that analyses the web server log file, extracts the required fi
 
 ### Creating Data Pipelines using Apache Airflow
 Defining the DAG arguments.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/dag_args.PNG)
+
+Defining the DAG.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/dag_definition.PNG)
+
+Creating a task to extract the ip address field from the web server log file into extracted_data.txt file.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/extract_data.PNG)
+
+Creating a task to filter out all the occurrences of ip address “198.46.149.143” from extracted_data.txt file into transformed_data.txt file.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/transform_data.PNG)
+
+Creating a task to archive the file transformed_data.txt file into weblog.tar file.
+![alt txt](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/load_data.PNG)
+
+Defining the task pipeline.
+![alt txt](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/pipeline.PNG)
+
+### Getting the DAG operational
+Submitting the DAG.
+![alt txt](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/submit_dag.PNG)
+
+Unpausing the DAG.
+![alt txt](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/unpause_dag.PNG)
+
+Monitoring the DAG.
+![alt txt](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/9c5d0dd7c5b07e3bb4b9c2609cbf567a67a9d447/Data_Engineering_Capstone_Project/5_ETL_&_Data_Pipelines_using_Apache_Airflow/Image_for_peer_graded_assignment/Part_2/dag_runs.PNG)
+
+## [Module 6: Big Data Analytics with Spark](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark)
+
+### Assignment Overview
+In this assignment, you will perform a number of tasks to analyze search terms on the e-commerce web server. You will work in Watson Studio within a Jupyter notebook to run your analysis against a CSV file containing the webserver data. You will load this file into a Spark data frame and print the results of your queries against this data set. You will then load a pre-trained sales forecasting model and use this to predict the sales for next year.
+
+### Analyse search terms on the e-commerce web server
+
+Installing and starting spark session. Downloading the search term data set for the e-commerce web server.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/Starting_spark_session.PNG)
+
+Printing the number of rows and columns in the data set.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/shape.PNG)
+
+Printing the top 5 rows in the data set.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/top5rows.PNG)
+
+Finding the data type of the column “searchterm”.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/datatype.PNG)
+
+Finding the number of times, the term “gaming laptop” was searched.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/gaminglaptop.PNG)
+
+Printing the top 5 frequently used search terms.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/top5terms.PNG)
+
+Loading the sales forecast model.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/loadmodel.PNG)
+
+Predicting the sales for the year 2023, using the sales forecast model.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/e33d922e49c6e3c5038b218eb3f3bd0c334e091f/Data_Engineering_Capstone_Project/6_Big_Data_Analytics_with_Spark/Image_for_peer_graded_assignment/forecast.PNG)
