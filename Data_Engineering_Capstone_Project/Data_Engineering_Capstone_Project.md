@@ -71,4 +71,13 @@ Creating index on the timestamp field to speed up queries.
 Writing a bash script(datadump.sh) that exports all the rows in the sales_data table to a file named sales_data.sql to automate the export of the daily incremental data into the data warehouse.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/aa9d734b245eb08ef3d1fdf17939080bb4025dd7/Data_Engineering_Capstone_Project/1_Data_Platform_Architecture_and_OLTP_Database/Image_for_peer_graded_assignment/exportdata.PNG)
 
-## Module 2: 
+## [Module 2: Querying Data in NoSQL Databases](https://github.com/PhoneSettPaing/IBM-Data-Engineering/tree/main/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases)
+
+### Scenario
+You are a data engineer at an e-commerce company. Your company needs you to design a data platform that uses MongoDB as a NoSQL database. You will be using MongoDB to store the e-commerce catalogue data.
+
+### Importing data into MongoDB database
+Installing mongoimport and mongoexport. Importing given data(catalog.json) into a database named ‘catalog’ and a collection named ‘electronics’ on mongodb server.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0e3e9c816b04837746774a0e262579d36d69c790/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongoimport.PNG)
+
+List out all databases and collections on mongodb server to check if catalog database and electronics collection are created successfully or not.
