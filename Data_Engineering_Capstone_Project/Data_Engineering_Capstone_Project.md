@@ -19,3 +19,4 @@ The Capstone project is divided into 6 Modules:
 * In the 6 and final Module, you will use your skills in Big Data Analytics to create a Spark connection to the data warehouse, and then deploy a machine learning model on SparkML for making sales projections.
 
 ## Data Platform Architecture
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/597bd156489f2ad7f60fec471ff007a6671244e2/Data_Engineering_Capstone_Project/data_platform_architecture.png)
