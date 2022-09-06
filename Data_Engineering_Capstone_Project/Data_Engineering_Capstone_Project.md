@@ -96,3 +96,6 @@ Finding the number of smart phones with screen size of 6 inches.
 Finding the average screen size of smart phones.
 ![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/0569f01ad0d247d8c87ffe95252109c19b5dc661/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongo-query-mobiles2.PNG)
 
+### Export data from MongoDB database as csv file
+Exporting the fields _id, “type”, “model”, from the ‘electronics’ collection into a file named electronics.csv.
+![alt text](https://github.com/PhoneSettPaing/IBM-Data-Engineering/blob/2593ee5538736ad3755cc130ea3993647e2100e3/Data_Engineering_Capstone_Project/2_Querying_Data_in_NoSQL_Databases/Image_for_peer_graded_assignment/mongoexport.PNG)
